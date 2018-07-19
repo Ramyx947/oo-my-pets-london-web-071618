@@ -23,5 +23,8 @@ end
 def self.count
   OWNERS.length
 end
+def say_species
+  puts "I am #{species}."
+end 
  
 end
