@@ -28,6 +28,7 @@ def say_species
 end 
 
 def buy_fish
+  @pets[fish]<< Fish.new(name)
 end
 def buy_cat
 end
