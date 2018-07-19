@@ -52,8 +52,15 @@ def feed_fish
   end 
 end
 def sell_pets
+  @pets.each do |k,v|
+    v.each do |pet|
+      pet.mood = "nervous"
+    end 
+  end 
+  @pets.clear
 end
 def list_pets
+  return "I have #{@pets[:fishes].length} fish, #{@pets[:dogs].length} dog(s), and #{@pets[:cats].length} cat(s)."
 end 
  
 end
