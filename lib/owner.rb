@@ -60,6 +60,7 @@ def sell_pets
   @pets.clear
 end
 def list_pets
+  
 end 
  
 end
